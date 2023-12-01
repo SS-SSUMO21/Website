@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>MealBytes - Bytics inc</title>
+	<link href="style.css" rel="stylesheet">
+	<meta charset="utf-8">
+
+</head>
+
+<script type="text/javascript">
+//var outputText = document.getElementById("MealKitStores");
+function searchMenusInDistrict() {
+	//When writing this code, I referenced from: https://stackoverflow.com/questions/15987140/how-to-check-if-an-item-is-selected-from-an-html-drop-down-list
+	//and https://www.geeksforgeeks.org/how-to-get-the-text-of-option-tag-by-value-using-javascript/
+	//will need to update the getElementById("District_list") and replace District_list with whatever Keno writes
+	//var input = document.getElementById("Locations").selectedIndex;
+	//var itemSelected = input.options.[input].value;
+	var itemSelected = document.getElementById("Locations").value;
+	if(itemSelected == "location_1"){
+	//this means Kanata was selected
+		//document.write("Kanata MealKit1\nKanata MealKit2\nKanata MealKit3")
+		alert("The meal kit stores in your area are:\nKanata MealKit1\nKanata MealKit2\nKanata MealKit3");
+	} else if (itemSelected == "location_3"){
+	//this means that Barrhaven was selected
+		alert("The meal kit stores in your area are:\nBarrhaven MealKit1\nBarrhaven MealKit2\nBarrhaven MealKit3");
+	} else if (itemSelected == "location_2"){
+	//this means that Nepean was selected
+		alert("The meal kit stores in your area are:\nNepean MealKit1\nNepean MealKit2\nNepean MealKit3");
+	} else {
+	//this means that Downtown was selected
+		alert("The meal kit stores in your area are:\nDowntown MealKit1\nDowntown MealKit2\nDowntown MealKit3");
+	}
+	
+}
+
+
+</script>
+
+<header>
+	<nav class="navbar">
+		<a href="#" class="logo">
+			<img class="headerPhoto"src="Images/testFile.png">
+		</a>
+		<ul class="headerlinks">
+			<li><a href="index.html">
+				<span class="home">Home</span>
+			</a></li>
+			<li><a href="features.html">Product Features</a></li>
+			<li><a href="pricing.html">Pricing</a></li>
+			<li><a href="team.html">Our Team</a></li>
+			<li class="language-item">
+				<a href="">
+					<span class="material-symbols-outlined2"><a href="french-features.html">language</a></span>
+				</a></li>
+		</ul>
+	</nav>
+  </header>
+
+<body >
+
+	<hr color="black">
+	<!-- Reference: https://www.w3schools.com/tags/tag_header.asp -->
+	<!-- header --> 
+	
+	<h1 Class="titleP">Welcome to our product features page!</h1>
+
+	<hr color="black">
+	<!-- Reference: https://www.w3schools.com/tags/tag_header.asp -->
+	<!-- header --> 
+	
+	<br>
+	<br>
+	
+	<!-- style="color:rgb(219, 155, 28);" -->
+	<div style="text-align:center;">
+		<!-- Put your code inside these body tags -->
+		<!-- Make sure you indent your code! -->
+		<!-- Add your feature in here -->
+		
+		<!-- Mettez votre code dans ces balises body -->
+		<!-- Assurez-vous de mettre votre code en retrait! -->
+		<!-- Ajoutez votre fonctionnalité ici -->
+
+		<ul>
+			<li class="fts">• 500 Gigabytes of storage for recipes</li>
+			<li class="fts">• 5 Quarts of room for the food to be cooked in</li>
+			<li class="fts">• 500 Watts of power for cooking</li>
+		</ul>
+		
+		<br><br>
+		
+		<section id="loca">
+		<h2>
+			No need to worry about your location we got you covered!
+		</h2>
+		<h3>Click to find mealkits in your area:</h3>
+		<!-- <form name="userLocation" method="post" onsubmit="return searchMenusInDistrict()"> -->
+		<!-- I used this link as a reference to do this part of the code: https://stackoverflow.com/questions/68910179/how-to-call-a-javascript-function-from-select-option-with-html -->
+			<select id='Locations' onChange="searchMenusInDistrict()">
+				<option value='empty'></option>
+				<option value='location_1'>Kanata</option>
+				<option value='location_2'>Nepean</option>
+				<option value='location_3'>Barrhaven</option>
+				<option value='location_4'>Downtown</option>
+			</select>
+		</section>
+			<!-- Reference: https://stackoverflow.com/questions/12944329/add-onclick-function-to-a-submit-button -->
+			<!-- <input type="submit" value="Submit" class=class="button button1" onclick="searchMenusInDistrict()" > -->
+			<!-- <button onclick="searchMenusInDistrict()">Submit</button> -->
+			<!-- <input type="submit" value="Submit"> -->
+		<!-- </form> -->
+		
+	
+		<p id="MealKitStores"></p>
+	
+	</div>
+	
+	
+	<!-- footer --> 
+	<!-- Reference: https://www.w3schools.com/tags/tag_footer.asp -->
+</body>
+
+</html>

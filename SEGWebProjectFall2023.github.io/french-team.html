@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>MealBytes - Bytics inc</title>
+  <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  
+</head>
+
+<header>
+  <nav class="navbar">
+      <a href="french-index.html" class="logo">
+          <img class="headerPhoto"src="Images/testFile.png">
+      </a>
+      <ul class="headerlinks">
+        <li><a href="french-index.html">
+            <span class="home">Home</span>
+        </a></li>
+        <li><a href="french-features.html">Fonctionnalite</a></li>
+        <li><a href="french-pricing.html">Prix</a></li>
+        <li><a href="french-team.html">Notre Equipe</a></li>
+        <li class="language-item">
+            <a href="">
+              <span class="material-symbols-outlined2"><a href="team.html">language</a></span>
+            </a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+
+
+	<!-- Reference: https://www.w3schools.com/tags/tag_header.asp -->
+	<!-- header --> 
+
+	<!-- Put your code inside these body tags -->
+	<!-- Make sure you indent your code! -->
+	<!-- Add your feature in here -->
+	
+	<!-- Mettez votre code dans ces balises body -->
+	<!-- Assurez-vous de mettre votre code en retrait! -->
+	<!-- Ajoutez votre fonctionnalité ici -->
+	
+	
+	
+	<!-- footer --> 
+	<!-- Reference: https://www.w3schools.com/tags/tag_footer.asp -->
+
+
+
+  <!-- Reference: https://www.w3schools.com/tags/tag_header.asp -->
+  <!-- header --> 
+
+
+    <hr color="black">
+    <section>
+        <div class="titleP">
+            Rencontrez notre équipe
+            <br>
+            <p id="text" style="font-size: 24px; margin-top: -10px; text-align: center;">Bienvenue</p>
+        </div>
+    </section>
+    <hr color="black">
+
+    <div class="container">
+      <div class="member">
+          <h2>Krystan Kornafel</h2>
+          <p>Je suis un étudiant en génie logiciel à l'Université d'Ottawa passionné par la cryptographie, l'astronomie et l'apprentissage des différentes technologies de l'industrie. </p>
+          <p><a href="mailto:hege@example.com">kkorn022@uottawa.ca</a></p>
+      </div>
+      <div class="member">
+          <h2>Samarventhan Surendran</h2>
+          <p>Je suis un étudiant enthousiaste à l'Université d'Ottawa et je poursuis actuellement un diplôme en génie logiciel. Ma passion pour la technologie et le codage est ce qui me motive dans mon parcours pour devenir un développeur de logiciels qualifié.</p>
+          <p><a href="mailto:hege@example.com">ssure086@uottawa.ca</a></p>
+      </div>
+      <div class="member">
+          <h2>Keno Obuwoma</h2>
+          <p>Je suis un aspirant ingénieur logiciel à l'Université d'Ottawa. Pendant mon temps libre, j'aime apprendre de nouvelles choses et rencontrer de nouvelles personnes.</p>
+          <p><a href="mailto:hege@example.com">oobuw041@uottawa.ca</a></p>
+      </div>
+      <div class="member">
+          <h2>Matthew Buentiempo</h2>
+          <p>Bonjour, je m'appelle Matthew Buentiempo et je fréquente actuellement l'Université d'Ottawa dans le programme de génie logiciel. Mes passe-temps jouent au basket et codent. J'aime m'attaquer à des problèmes difficiles et proposer des solutions complexes via le code et d'autres moyens.
+            ​</p>
+          <p><a href="https://www.instagram.com/matthew.buentiempo/">insta: matthew.buentiempo</a></p>
+          <p><a href="mailto:hege@example.com">mbuen042@uottawa.ca</a></p>
+      </div>
+      <div class="member">
+          <h2>Mehdi Semmar</h2>
+          <p>Je m'appelle Mehdi, un étudiant passionné à l'Université d'Ottawa, étudiant en génie logiciel. J'ai un amour profond pour les ordinateurs et un fort intérêt pour l'IA et l'analyse de données, qui motivent mon enthousiasme pour ce domaine.</p>
+          <p><a href="mailto:hege@example.com">msemm031@uottawa.ca</a></p>
+      </div>
+      <div class="member">
+          <h2>Jaouen Girijambo</h2>
+          <p> Je m'apppelle Jaouen Joey Girijambo, je suis en G&eacute;nie logiciel &agrave; l'Universit&eacute; d'Ottawa. Je suis int&eacute;ress&eacute; par tout ce qui est programmation malgr&eacute; que je suis dans mes d&eacute;buts, mon object est de m'am&eacute;liorer dans le programme et aussi en anglais afin de pouvoir &ecirc;tre autonome.  </p>
+          <p><a href="mailto:hege@example.com">jgiri024@uottawa.ca</a></p>
+      </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="wrapping">
+        <div class="rating">
+            <div class="ratetext">Laissez une note</div>
+            <input type="number" name="rating" hidden>
+            <i class='bx bx-star star star' id="0"></i>
+            <i class='bx bx-star star star' id="1"></i>
+            <i class='bx bx-star star star' id="2"></i>
+            <i class='bx bx-star star star' id="3"></i>
+            <i class='bx bx-star star star' id="4"></i>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+      const textElement = document.getElementById("text");
+      const stars = document.querySelectorAll('.bx-star');
+      const textValues = ["Bienvenu", "Qui sommes nous", "Comment nous contacter"];
+      let currentIndex = 0;
+
+      function updateText() {
+          textElement.textContent = textValues[currentIndex];
+          currentIndex = (currentIndex + 1) % textValues.length;
+        }
+      setInterval(updateText, 3000);
+      
+      stars.forEach((star) => {
+        star.addEventListener('click', () => {
+              console.log(star);
+              for (let strs of stars){strs.style.color="grey";}
+              for( let o=0 ; o<=parseInt(star.id);o++){
+                stars[o].style.color="rgb(255, 228, 55)";
+                stars[o].style.scale=1;
+              }
+              setTimeout(() => {
+                alert("Merci pour votre note!");
+                }, 100);
+          });
+      });
+  </script>
+<body>
+
+  <!-- footer --> 
+  <!-- Reference: https://www.w3schools.com/tags/tag_footer.asp -->
+
+</html>

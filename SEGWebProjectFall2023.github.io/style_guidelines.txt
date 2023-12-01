@@ -1,0 +1,35 @@
+Overall Look and Feel of MealBytes
+===================================
+
+The overall look and feel will be happy and cheerful to reflect our overall theme on what we are trying to promote. Since our product is supposed to promote a happier, healthier lifestyle, we want our website to reflect this as well. We will not have 3d buttons, however we will have regular buttons and links, as with other websites that we have interacted with in the past.
+
+Colours
+========
+For MealBytes, the colours that will be used will reflect that are product promotes happiness and a more cheerful lifestyle.
+These are our color swatches:
+
+- #EB9824
+- #FFF8DC
+- #8FBFF3
+- #577590
+- #B0E0E6
+- #00FFFF
+- #577590
+- #03E5F1
+
+
+Iconography
+===========
+We will be using a 'flat' design, where there are no shadows or 3D buttons.
+
+Typography
+==========
+We will be using Arial from Google Fonts.
+
+Links
+=====
+Links will not be underlined but will change from a dark gray to a light gray when hovered over.
+
+Buttons
+=======
+Buttons will be flat designed using the Orange colour (#eb9824) outlined above.

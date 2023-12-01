@@ -1,0 +1,21 @@
+def donne_cartes(p):
+     '''(list of str)-> tuple of (list of str,list of str)
+
+     Retournes deux listes qui représentent les deux mains des cartes.  
+     Le donneur donne une carte à l'autre joueur, une à lui-même,
+     et ça continue jusqu'à la fin du paquet p.
+     '''
+     
+         
+     donneur=[]
+     autre=[]
+     index = 0
+     while index < len(p):
+        if index % 2 == 0:
+            donneur.append(p[index])
+        else:
+            autre.append(p[index])  
+        index = index + 1   
+     return (donneur, autre)
+j = [1,2,3,4,5,6,7,8]
+print(donne_cartes(j))
